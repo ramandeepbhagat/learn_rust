@@ -25,5 +25,5 @@ fn main() {
 
     let diff = sub.run(10, 20);
     println!("\nOperation: {:?}", sub);
-    println!("Diif: {:?}", diff);
+    println!("Diff: {:?}", diff);
 }

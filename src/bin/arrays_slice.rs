@@ -10,6 +10,7 @@ fn main() {
     let xs: [i32; 5] = [10, 20, 30, 40, 50];
 
     // Arrays are stack allocated
+    // `size_of_val` returns the size of a variable in bytes
     println!("array occupies {} bytes", mem::size_of_val(&xs));
 
     // Arrays can be automatically borrowed as slices
