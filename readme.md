@@ -1,4 +1,4 @@
-#Commands:
+# Commands:
 
 1. cargo new project_name
 2. cargo build

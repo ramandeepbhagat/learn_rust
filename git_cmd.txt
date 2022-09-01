@@ -1,0 +1,5 @@
+Use the following to remove a specific file from the staging area:
+git restore --staged <individual_file>
+
+Or use the following to remove all the files that are currently staged:
+git restore --staged .
