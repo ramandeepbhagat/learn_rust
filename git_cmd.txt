@@ -3,3 +3,6 @@ git restore --staged <individual_file>
 
 Or use the following to remove all the files that are currently staged:
 git restore --staged .
+
+Use the following command to delete a local commit
+git reset --soft HEAD@{0}
