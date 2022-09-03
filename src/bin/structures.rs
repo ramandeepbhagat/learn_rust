@@ -33,7 +33,7 @@ struct Rectangle {
 
 impl Rectangle {
     pub fn rect_area(&self) -> f32 {
-        ((&self.p1.x - &self.p2.x) * (&self.p1.y - &self.p2.y)).abs()
+        ((self.p1.x - self.p2.x) * (self.p1.y - self.p2.y)).abs()
     }
 }
 
