@@ -20,4 +20,12 @@ fn main() {
     let one = || 1;
     println!("closure returning one: {}", one());
 
+    // `Vec` has non-copy semantics.
+    let haystack = vec![1, 2, 3];
+
+    let contains = move |needle| haystack.contains(needle);
+
+    println!("{}", contains(&1));
+    println!("{}", contains(&5));
+
 }
