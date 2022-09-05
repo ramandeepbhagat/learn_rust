@@ -5,3 +5,5 @@
 3. cargo run
 4. cargo run --bin file_name
 5. rustc ./src/split.rs && ./split
+6. rustc --crate-type=lib --crate-name=rary ./src/rary.rs
+7. ls lib\*
