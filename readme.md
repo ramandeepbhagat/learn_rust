@@ -4,3 +4,4 @@
 2. cargo build
 3. cargo run
 4. cargo run --bin file_name
+5. rustc ./src/split.rs && ./split
