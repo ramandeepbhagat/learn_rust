@@ -19,7 +19,24 @@ fn drink(drink: Option<&str>) {
     println!("I love {}s!!!!!", inside);
 }
 
+fn next_birthday(current_age: Option<u8>) -> Option<String> {
+	// If `current_age` is `None`, this returns `None`.
+	// If `current_age` is `Some`, the inner `u8` gets assigned to `next_age`
+    let next_age: u8 = current_age? + 1;
+    Some(format!("Next year I will be {}", next_age))
+}
+
 fn main() {
+
+    let age = Some(18);
+    let no_age: Option<u8> = None;
+
+    let next_age = next_birthday(age);
+    println!("Next age: {:?}", next_age);
+
+    let next_age_none = next_birthday(no_age);
+    println!("Next age none: {:?}", next_age_none);
+
     let water  = Some("water");
     let lemonade = Some("lemonade");
     let void  = None;
@@ -29,8 +46,11 @@ fn main() {
     give_adult(void);
 
     let coffee = Some("coffee");
-    let nothing = None;
+    let nothing: Option<&str> = None;
 
     drink(coffee);
+    drink(lemonade);
     drink(nothing);
+
+
 }
