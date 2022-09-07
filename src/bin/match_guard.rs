@@ -1,5 +1,6 @@
 enum Temperature {
     Celsius(i32),
+    #[allow(dead_code)]
     Farenheit(i32),
 }
 

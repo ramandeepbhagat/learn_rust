@@ -5,4 +5,6 @@ fn main() {
     println!("\nHello, world!");
     println!("I'm a Rustacean!");
 
+    // rary::public_function();
+
 }

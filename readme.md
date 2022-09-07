@@ -7,3 +7,4 @@
 5. rustc ./src/split.rs && ./split
 6. rustc --crate-type=lib --crate-name=rary ./src/rary.rs
 7. ls lib\*
+8. rustc ./src/main.rs --extern rary=library.rlib --edition=2018 && ./main

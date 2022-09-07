@@ -32,6 +32,7 @@ fn nested_loop() {
     'outer: loop {
         println!("\nEntered the outer loop");
 
+        #[allow(unused_labels)]
         'inner: loop {
             println!("Entered the inner loop");
 

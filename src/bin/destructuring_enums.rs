@@ -1,8 +1,11 @@
 enum Color {
     // Red is specified solely by its name.
+    #[allow(dead_code)]
     Red,
     // These likewise tie `u32` tuples to different names: color models.
     RGB(u32, u32, u32),
+
+    #[allow(dead_code)]
     CMYK(u32, u32, u32, u32),
 }
 
